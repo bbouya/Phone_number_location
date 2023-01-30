@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result Page</title>
+  </head>
+  <body>
+    <h1>Parsed JSON Data</h1>
+    <table>
+      {% for key, value in data.items() %}
+        <tr>
+          <td>{{ key }}</td>
+          <td>{{ value }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
